@@ -9,7 +9,7 @@ def on_yes():
     window.title("Finestra SI")
     
     # Testo al centro
-    tk.Label(window, text="Inserisci il numero di valori da selezionare:").pack()
+    tk.Label(window, text="quanti insulti vuoi?").pack()
     
     # Casella di testo
     e = tk.Entry(window)
@@ -37,7 +37,7 @@ def on_yes():
             lb.insert(tk.END, value)
         lb.pack(side=tk.LEFT, fill=tk.BOTH)
         scrollbar.config(command=lb.yview)
-    tk.Button(window, text="Vai", command=on_go).pack()
+    tk.Button(window, text="insulta", command=on_go).pack()
     
 # Funzione per la finestra "NO"
 def on_no():
@@ -48,10 +48,10 @@ root = tk.Tk()
 root.title("Interfaccia grafica")
 
 # Testo in alto al centro
-tk.Label(root, text="Vuoi continuare?", font=("Helvetica", 16)).pack()
+tk.Label(root, text="GENERATORE DI INSULTI CASUALI", font=("Helvetica", 16)).pack()
 
 # Testo al centro
-tk.Label(root, text="Premi SI per continuare o NO per uscire").pack()
+tk.Label(root, text="vuoi insulti?").pack()
 
 # Bottone "SI"
 tk.Button(root, text="SI", command=on_yes).pack()
